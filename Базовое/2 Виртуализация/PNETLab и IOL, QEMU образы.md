@@ -1,18 +1,27 @@
 ## Теория
 - https://zvlb.github.io/blog/virtualization/
 - https://habr.com/ru/articles/657677/
-
+- Изучить что из себя представляет PNETLab
+- Протоколы удаленного доступа(ssh, telnet, VNC, RDP)
 ## Практика
-Для тех у кого железо тянет(8+ ГБ ОЗУ и 40ГБ+ свободного места) - развернуть PNETLab у себя через VMware
-Если не тянет, то все тоже самое, но без создания qemu нод. Просто при выполнении LDAP перейти на наш сервер
+Для тех у кого устройство имеет 8+ ГБ ОЗУ и 60ГБ+ свободного места - развернуть PNETLab у себя через VMware
 
-- IOL
-i86bi_LinuxL2-AdvEnterpriseK9-M_152_May_2018.bin - для свитчей доступа и агрегации
-i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin - для роутеров
-https://github.com/ishare2-org/ishare2-cli
-- QEMU
+Если не тянет, то все равно развернуть, но без подготовки и использования qemu нод. Просто при выполнении СРК перейти на наш сервер
+
 Подготовить образы:
+
+IOL
+- i86bi_LinuxL2-AdvEnterpriseK9-M_152_May_2018.bin - для свитчей доступа и агрегации
+- i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin - для роутеров
+- https://github.com/ishare2-org/ishare2-cli - утилита для упрощенного получения этих образов
+QEMU
 - debian 12 2гб 2 ядра: сначала выполнить установку без gui и web сервера => сделать снапшот в отдельное устройство => установить вручную окружение xfce и по желанию xrdp для нативного(а значит более быстрого) подключения с хостовой Windows системы 
 - Windows server 2019r2 standard с gui 2гб 2 ядра 32гб
-https://wiki.yandex.ru/users/i.viktorov/pnetlab-dobavlenie-qemu-obrazov/
-https://www.eve-ng.net/index.php/documentation/howtos/howto-create-own-windows-server-on-the-eve/
+
+Для большей практической пользы рекомендуется добавить эти образы уже вручную
+- https://wiki.yandex.ru/users/i.viktorov/pnetlab-dobavlenie-qemu-obrazov/
+- https://www.eve-ng.net/index.php/documentation/howtos/howto-create-own-windows-server-on-the-eve/
+
+Для удобства подключения к удаленным машинам также можно установить клиентский пак EVE-NG
+- https://www.eve-ng.net/index.php/download/#DL-WIN
+Но по сути ничего не мешает использовать любимый терминал, единственным минусом будет являться необходимость вручную вбивать данные для подключения. Автор курса, например, использует универсальный MobaXterm + самописные скрипты для автоматизации подключения

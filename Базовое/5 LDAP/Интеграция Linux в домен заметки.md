@@ -1,6 +1,4 @@
 Tags: [[стажировка ИТ протех]] 
-**Вкратце:**
-	
 # Теория
 	Цели занятия:
 	1. Реализовать конфигурацию Router-on-stick с использованием образов Mikrotik RouterOS 6 версии.
@@ -34,7 +32,6 @@ Tags: [[стажировка ИТ протех]]
 ```shell
 [admin@MikroTik] > interface bridge add name=bridge1 vlan-filtering=yes
 [admin@MikroTik] > interface bridge port
-[admin@MikroTik] /interface bridge port> add bridge=bridge1 interface=ether1
 [admin@MikroTik] /interface bridge port> add bridge=bridge1 interface=ether2
 [admin@MikroTik] /interface bridge port> add bridge=bridge1 interface=ether3
 [admin@MikroTik] /interface bridge port> add bridge=bridge1 interface=ether4
