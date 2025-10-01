@@ -34,7 +34,7 @@ QEMU
 
 Для большей практической пользы рекомендуется добавить эти образы вручную, а не при помощи ishare2
 
-- [примерная инструкция](PNETLab%добавление%QEMU%образов.pdf)
+- [примерная инструкция](PNETLab%20добавление%20QEMU%20образов.pdf)
 - https://www.eve-ng.net/index.php/documentation/howtos/howto-create-own-windows-server-on-the-eve/
 
 Для удобства удаленного доступа к машинам также можно установить клиентский пак EVE-NG
