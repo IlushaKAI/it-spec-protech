@@ -1,9 +1,14 @@
+Рекомендованное время прохождения этапа - 2 дня
+
+В отчете должны быть скрины развернутого PNETLab и работающих IOL и QEMU нод
 ## Теория
 
 - https://zvlb.github.io/blog/virtualization/
 - https://habr.com/ru/articles/657677/
 - Изучить что из себя представляет PNETLab
-- Протоколы удаленного доступа(ssh, telnet, VNC, RDP)
+- Принципы работы протоколов удаленного доступа(ssh, telnet, VNC, RDP)
+- Обзорная статья по работе с Wokrstation Pro https://remontka.pro/vmware-workstation/ 
+- Обзорная статья по типам сетевых адаптеров в Workstation Pro https://serverspace.ru/support/help/vmware-workstation-nastrojka-seti/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com
 
 ## Практика
 
@@ -32,7 +37,7 @@ QEMU
 - [примерная инструкция](PNETLab%добавление%QEMU%образов.pdf)
 - https://www.eve-ng.net/index.php/documentation/howtos/howto-create-own-windows-server-on-the-eve/
 
-Для удобства подключения к удаленным машинам также можно установить клиентский пак EVE-NG
+Для удобства удаленного доступа к машинам также можно установить клиентский пак EVE-NG
 
 - https://www.eve-ng.net/index.php/download/#DL-WIN
   Но по сути ничего не мешает использовать любимый терминал, единственным минусом будет являться необходимость вручную вбивать данные для подключения. Автор курса, например, использует MobaXterm, поддерживающий все необходимые протоколы удаленного доступа + самописные скрипты для автоматизации подключения
